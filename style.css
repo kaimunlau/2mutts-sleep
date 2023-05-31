@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap');
+
+:root {
+    --color-primary: rgb(185 205 235);
+    --color-red: rgb(244 134 115);
+    --icon-dropshadow: drop-shadow(12px 10px 0px rgba(0, 0, 0, 0.33));
+    --icon-dropshadow-hover: drop-shadow(11px 8px 9px rgba(0, 0, 0, 0.33));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lexend, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url('./img/bg/2MUTTS_BG_v3r0.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    animation: blur 5s ease-in-out infinite alternate;
+}
+
+@keyframes blur {
+    from {
+        backdrop-filter: blur(8px);
+    }
+
+    to {
+        backdrop-filter: blur(2px);
+    }
+}
+
+.mutts-logo {
+    filter: var(--icon-dropshadow);
+    width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.text {
+    text-transform: uppercase;
+    color: var(--color-red);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+    margin: 0;
+}
+
+.contact-container {
+    margin-top: 1rem;
+}
+
+.contact-container i {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin: 0 1rem;
+    filter: var(--icon-dropshadow);
+}
+
+/** Breakpoints:
+  sm: min-width: 640px;
+  md: min-width: 768px;
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
+
+/* md */
+@media (min-width: 768px) {
+    .mutts-logo {
+        width: 50%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .contact-container {
+        margin-top: 2rem;
+        min-height: 2.2rem;
+    }
+
+    .contact-container i {
+        font-size: 2rem;
+    }
+
+    .contact-container i:hover {
+        font-size: 2.2rem;
+        filter: var(--icon-dropshadow-hover);
+    }
+}
