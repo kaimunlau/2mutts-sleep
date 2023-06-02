@@ -3,7 +3,8 @@
 :root {
     --color-primary: rgb(185 205 235);
     --color-red: rgb(244 134 115);
-    --icon-dropshadow: drop-shadow(12px 10px 0px rgba(0, 0, 0, 0.33));
+    --color-red-new: rgb(250 150 170);
+    --icon-dropshadow: drop-shadow(12px 10px 0px rgba(0, 0, 0, 0.119));
     --icon-dropshadow-hover: drop-shadow(11px 8px 9px rgba(0, 0, 0, 0.33));
 }
 
@@ -20,7 +21,7 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background-image: url('./img/bg/2MUTTS_BG_v3r0.png');
+    background-image: url('./img/bg/2MUTTS_BG_RT_v4_Crop.png');
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(8px);
@@ -46,7 +47,7 @@ body {
 
 .text {
     text-transform: uppercase;
-    color: var(--color-red);
+    color: var(--color-red-new);
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.01rem;
