@@ -6,6 +6,7 @@
     --color-red-new: rgb(250 150 170);
     --color-purple: rgb(85 105 190);
     --icon-dropshadow: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.119));
+    --icon-dropshadow-md: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.119));
     --icon-dropshadow-hover: drop-shadow(11px 8px 9px rgba(0, 0, 0, 0.33));
 }
 
@@ -80,6 +81,7 @@ body {
         width: 50%;
         height: auto;
         margin-bottom: 4rem;
+        filter: var(--icon-dropshadow-md);
     }
 
     .contact-container {
