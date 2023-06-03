@@ -4,7 +4,8 @@
     --color-primary: rgb(185 205 235);
     --color-red: rgb(244 134 115);
     --color-red-new: rgb(250 150 170);
-    --icon-dropshadow: drop-shadow(12px 10px 0px rgba(0, 0, 0, 0.119));
+    --color-purple: rgb(85 105 190);
+    --icon-dropshadow: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.119));
     --icon-dropshadow-hover: drop-shadow(11px 8px 9px rgba(0, 0, 0, 0.33));
 }
 
@@ -47,7 +48,7 @@ body {
 
 .text {
     text-transform: uppercase;
-    color: var(--color-red-new);
+    color: var(--color-purple);
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.01rem;
